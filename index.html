@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Студия цифровых прототипов</title>
+</head>
+<body>
+    <header>
+        <div class="toggle"></div>
+        <a href="#" class="logo"><img src="logo.png"></a>
+    </header>
+    <section class="banner">
+        
+        
+       
+
+        <div class="content">
+            <p>Студия Цифровых Прототипов</p>
+            <p>Проект студентов из Лабаратории САПР Разработки. Наша цель - создание интерактивных инструкций на базе отечественного ПО Unigine. 
+                Интерактивная инструкция это полезная программа которая может пригодится людям на заводе чтобы не накосячить. </p>
+            <a href="#" class="btn"><ion-icon name="play-circle-outline"></ion-icon>Смотреть</a>
+        </div>
+        
+        <div class="clip">
+        <div class="clipBox">
+            <a href="https://www.youtube.com/watch?v=uOK54x3qWiM&ab_channel=Unity%2FMayaMospolytech">
+                <img src="vid1.PNG" >
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="clipBox">
+            <a href="https://www.youtube.com/watch?v=uOK54x3qWiM&ab_channel=Unity%2FMayaMospolytech">
+                <img src="vid2.PNG" >
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </a>
+        </div>
+        </div>
+
+        <ul class="socialIcon">
+            <li><a href="https://vk.com/club199345722"><ion-icon name="logo-vk"></ion-icon></a></li>
+            <li><a href="https://www.youtube.com/channel/UC_hNIQOdypbUB0AcMVY2l-A"><ion-icon name="logo-youtube"></ion-icon></a></li>
+            <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+    </section>
+    <section class="projects">
+        <h1>Наши проекты</h1>
+        <div class="equipment-carusel">
+            <link rel="stylesheet" href="ChiefSlider/chief-slider.css">
+            <style>
+                .container {
+                  max-width: 350px;
+                  margin: 0 auto;
+                  
+                }
+            
+                @media (min-width: 768px) {
+                  .container {
+                    max-width: 700px;
+                    margin: 0 auto;
+                  }
+                }
+            
+                @media (min-width: 1200px) {
+                  .container {
+                    max-width: 1050px;
+                    margin: 0 auto;
+                  }
+                }
+            
+                .slider__wrapper {
+                  overflow: hidden;
+                  margin-left: -5px;
+                  margin-right: -5px;
+                }
+            
+                .slider__item {
+                  flex: 0 0 100%;
+                  max-width: 100%;
+                }
+            
+                @media (min-width: 768px) {
+                  .slider__item {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                  }
+                }
+            
+                @media (min-width: 1200px) {
+                  .slider__item {
+                    flex: 0 0 33.3333333333%;
+                    max-width: 33.3333333333%;
+                  }
+                }
+            
+                .slider__item-content {
+                  padding-left: 5px;
+                  padding-right: 5px;
+                 
+                }
+            
+                .slider__content_header {
+                  position: relative;
+                 
+                }
+            
+                .slider__content_img {
+                  display: block;
+                  height: auto;
+                  max-width: 100%;
+                }
+            
+                .slider__content_section {
+                  position: absolute;
+                  bottom: 6px;
+                  left: 10px;
+                  background-color: rgba(0, 0, 0, 0.5);
+                  color: #fff;
+                  padding: 6px 10px;
+                  font-size: 14px;
+                  border-radius: 12px;
+                  line-height: 1;
+                }
+            
+                .slider__content_title {
+                    min-height: 75px;
+                  /* background: #fafafa; */
+                  ;
+                  color: #424242;
+                  white-space: normal;
+                  font-weight: 700;
+                  font-size: 20px;
+                  line-height: 1.3;
+                  padding: 10px 15px;
+                  margin: 0;
+
+                  background: #fff;
+                  height: 120px;
+                }
+            
+                .slider__content_footer {
+                  background: #fafafa;
+                  ;
+                  display: flex;
+                  padding: 20px 15px;
+                  color: #616161;
+                }
+            
+                .slider__content_avatar {
+                  flex: 0 0 40px;
+                  max-width: 40px;
+                }
+            
+                .slider__content_photo {
+                  display: block;
+                  height: auto;
+                  max-width: 100%;
+                  border-radius: 50%;
+                }
+            
+                .slider__content_author {
+                  margin-left: 8px;
+                  line-height: 40px;
+                }
+            
+                .slider__content_icon {
+                  height: 18px;
+                  margin-top: 12px;
+                  margin-left: auto;
+                }
+            
+                .slider__content_views {
+                  margin-left: 4px;
+                  line-height: 40px;
+                }
+            
+                .slider__control {
+                  background-color: unset;
+                  background-color: rgba(0, 0, 0, 0.1);
+                }
+            
+                .slider__control:hover,
+                .slider__control:focus {
+                  background-color: rgba(0, 0, 0, 0.288);
+                }
+            
+                .slider__indicators {
+                  bottom: -35px;
+                }
+            
+                .slider__indicators li {
+                  background-color: #eee;
+                }
+            
+                .slider__indicators li.active {
+                  background-color: #757575;
+                }
+              </style>
+            <div class="container">
+
+                <div class="slider" data-slider="chiefslider">
+                  <div class="slider__container">
+                    <div class="slider__wrapper">
+                      <div class="slider__items">
+                        <div class="slider__item">
+                          <div class="slider__item-container">
+                            <div class="slider__item-content">
+            
+                              <div class="slider__content_header">
+                                <img class="slider__content_img" src="slide1.png"
+                                  alt="..." width="350" height="250" loading="lazy">
+                                <!-- <span class="slider__content_section">Совет эксперта</span> -->
+                              </div>
+                              <h2 class="slider__content_title">Интерактивная инструкция по замене запчастей торцовочной пилы Makita LS1018L</h2>
+                             
+            
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item">
+                          <div class="slider__item-container">
+                            <div class="slider__item-content">
+            
+                              <div class="slider__content_header">
+                                <img class="slider__content_img"  src="slide2.png"
+                                  alt="..." width="350" height="250" loading="lazy">
+                                <!-- <span class="slider__content_section">Подборка</span> -->
+                              </div>
+                              <h2 class="slider__content_title">Интерактивная инструкция по работе с теплообменником</h2>
+                              
+            
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item">
+                          <div class="slider__item-container">
+                            <div class="slider__item-content">
+            
+                              <div class="slider__content_header">
+                                <img class="slider__content_img"  src="slide3.png"
+                                  alt="..." width="350" height="250" loading="lazy">
+                                <!-- <span class="slider__content_section">Подборка</span> -->
+                              </div>
+                              <h2 class="slider__content_title">Интерактивное приложение по сборке разборке двигателя беспилотника</h2>
+                              
+            
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item">
+                          <div class="slider__item-container">
+                            <div class="slider__item-content">
+            
+                              <div class="slider__content_header">
+                                <img class="slider__content_img"  src="slide4.png"
+                                  alt="..." width="350" height="250" loading="lazy">
+                                <!-- <span class="slider__content_section">Подборка</span> -->
+                              </div>
+                              <h2 class="slider__content_title">Интерактивная инструкция, демонстрирующая работу КПП</h2>
+                              
+            
+                            </div>
+                          </div>
+                        </div>
+                        <div class="slider__item">
+                          <div class="slider__item-container">
+                            <div class="slider__item-content">
+            
+                              <div class="slider__content_header">
+                                <img class="slider__content_img"  src="slide5.png"
+                                  alt="..." width="350" height="250" loading="lazy">
+                                <!-- <span class="slider__content_section">Подборка</span> -->
+                              </div>
+                              <h2 class="slider__content_title">Приложение, демонстрирующее работу ДВС, позволяющее изучить сборку детально</h2>
+                             
+            
+                            </div>
+                          </div>
+                        </div>
+            
+                        
+            
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="slider__control" data-slide="prev"></a>
+                  <a href="#" class="slider__control" data-slide="next"></a>
+                  <ol class="slider__indicators">
+                    <li data-slide-to="0"></li>
+                    <li data-slide-to="1"></li>
+                    <li data-slide-to="2"></li>
+                    <li data-slide-to="3"></li>
+                    <li data-slide-to="4"></li>
+                  </ol>
+                </div>
+            
+              </div>
+            
+              <script src="ChiefSlider/chief-slider.js"></script>
+            
+              <script>
+                const $slider = document.querySelector('[data-slider="chiefslider"]');
+                const slider = new ChiefSlider($slider, {
+                  loop: true,
+                  autoplay: true,
+                  interval: 5000,
+                  refresh: true,
+                  swipe: true
+                });
+              </script>
+              
+    </section>
+    <section class="team">
+        <h1>Наша команда</h1>
+        <div class="grid">
+            <div class="face">
+                <img src="face1.jpg" alt="">
+                <p>Лукьяненко В.С.</p>
+                <p>Лидер проекта</p>
+            </div>
+            <div class="face">
+                <img src="face1.jpg" alt="">
+                <p>Жерздев Т.А.</p>
+                <p>Программист</p>
+            </div>
+            <div class="face">
+                <img src="face1.jpg" alt="">
+                <p>Муравьев А.Г.</p>
+                <p>Программист</p>
+            </div>
+            <div class="face">
+                <img src="face1.jpg" alt="">
+                <p>Смирнова М.В.</p>
+                <p>UI-специалист</p>
+            </div>
+            <div class="face">
+                <img src="face1.jpg" alt="">
+                <p>Гусева А.Е.</p>
+                <p>3Д-дизайнер</p>
+            </div>
+            <div class="face">
+                <img src="face1.jpg" alt="">
+                <p>Платонов Д.А.</p>
+                <p>Программист</p>
+            </div>
+            <div class="face">
+                <img src="face1.jpg" alt="">
+                <p>Киколиашвили Д.З.</p>
+                <p>Программист/3Д-анимация</p>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div>
+            <ul class="socialIcon">
+                <li><a href="https://vk.com/club199345722"><ion-icon name="logo-vk"></ion-icon></a></li>
+                <li><a href="https://www.youtube.com/channel/UC_hNIQOdypbUB0AcMVY2l-A"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+        </div>
+        <div class="pics">
+            <img src="footer1.jpg" alt="">
+            <img src="footer2.png" alt="">
+        </div>
+    </section>
+
+    <ul class="navigation">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Наши проекты</a></li>
+        <li><a href="#">Команда</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        menuToggle.onclick = function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        } 
+    </script>
+</body>
+</html>
